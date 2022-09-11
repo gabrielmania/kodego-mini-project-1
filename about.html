@@ -7,21 +7,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Home - About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">\
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed2f2fe40a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav id="navbar">
-
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Our Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="properties.html">Properties</a>
+                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
     </nav>
     <section id="about-heading">
-
+        <div class="container py-5">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carousel/carousel1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/carousel2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/carousel3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="about-content">
+            <div class="row pb-5">
+                <div class="col-lg-5">
+                    <img src="https://picsum.photos/200">
+                </div>
+                <div class="col-lg-7 my-auto">
+                    <h2>History</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt delectus culpa ipsam
+                        officiis, excepturi quam odit quas ratione odio molestias voluptatem vitae maiores, alias quo ab
+                        quisquam, vel fugiat.</p>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-lg-7 my-auto order-2 order-lg-1">
+                    <h2>Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt delectus culpa ipsam
+                        officiis, excepturi quam odit quas ratione odio molestias voluptatem vitae maiores, alias quo ab
+                        quisquam, vel fugiat.</p>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <img src="https://picsum.photos/200">
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-lg-5">
+                    <img src="https://picsum.photos/200">
+                </div>
+                <div class="col-lg-7 my-auto">
+                    <h2>Vision</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt delectus culpa ipsam
+                        officiis, excepturi quam odit quas ratione odio molestias voluptatem vitae maiores, alias quo ab
+                        quisquam, vel fugiat.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="industry-partners">
-
+    <section id="industry-partners" class="py-5">
+        <h2 class="text-center">Industry Partners</h2>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner4.png" alt="">
+                </div>
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner1.png" alt="">
+                </div>
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner2.png" alt="">
+                </div>
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner3.png" alt="">
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner11.png"
+                        alt=""></div>
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner6.png" alt="">
+                </div>
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner7.png" alt="">
+                </div>
+                <div class="col-6 col-lg-3 py-3"><img class="mx-auto d-block" src="images/partners/partner8.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
-    <footer id="footer">
-
+    <footer id="footer" class="bg-dark pt-5 pb-3">
+        <div class="container align-items-center">
+            <div class="row">
+                <div class="col-12 col-lg-4 pb-3" id="company-details">
+                    <h2 class="text-light">Our Home</h2>
+                    <p class="text-light">Building your dream home one step at a time.</p>
+                </div>
+                <div class="col-6 col-lg-2 pb-3" id="sitemap">
+                    <p class="text-light">Home</p>
+                    <p class="text-light">Properties</p>
+                    <p class="text-light">About Us</p>
+                    <p class="text-light">Contact Us</p>
+                </div>
+                <div class="col-6 col-lg-3 pb-3" id="sitemap">
+                    <p class="text-light">Company Policy</p>
+                    <p class="text-light">Terms and Conditions</p>
+                    <p class="text-light">Privacy Policy</p>
+                    <p class="text-light">Social Responsibilities</p>
+                </div>
+                <div class="col-12 col-lg-3" id="social-media">
+                    <p class="text-light">Connect with us on our social media pages!</p>
+                    <i class="fa-brands fa-square-facebook text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-square-instagram text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-linkedin text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-square-twitter text-light fa-2xl pe-2"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
