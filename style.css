@@ -14,6 +14,13 @@
         margin: 0.25rem 0;
     }
 }
+
+#active-nav
+{
+    border-bottom: 1px solid #E3D5CA;
+    color: #EDEDE9;
+}
+
 /* ------------- About Us --------------- */
 #about-heading {
     background-color: #d5bdaf;
