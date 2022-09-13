@@ -79,7 +79,7 @@ Real estate is a booming industry here in the Philippines and providing an e-com
 
 **Wireframe:**
 
-![wireframe.png](https://drive.google.com/file/d/1X0wDi76n-yZtXbiKiaXZkXkN6GSJ9Jct/view?usp=sharing)
+[wireframe.png](https://drive.google.com/file/d/1X0wDi76n-yZtXbiKiaXZkXkN6GSJ9Jct/view?usp=sharing)
 
 **Color Pallete:** [https://coolors.co/palette/edede9-d6ccc2-f5ebe0-e3d5ca-d5bdaf](https://coolors.co/palette/edede9-d6ccc2-f5ebe0-e3d5ca-d5bdaf)
 
