@@ -5,28 +5,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Home - About Us</title>
+    <title>Our Home - Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ed2f2fe40a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav id="navbar">
-
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Our Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="properties.html">Properties</a>
+                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <button class="btn btn-outline-light">Login</button>
+                    <button class="btn btn-light">Register</button>
+                </div>
+            </div>
+        </div>
     </nav>
-    <section id="location">
-
+    <section id="location" class="py-5">
+        <div class="container w-50">
+            <div class="row">
+                <div id="contact-details" class="col-xxl-5 order-2 order-xxl-1 my-auto pt-3">
+                    <h2>We are located at</h2>
+                    <p>Level 8, Bonifacio Civic Center Tower, Bonifacio Global City, Taguig, Metro Manila</p>
+                    <h3>For sales inquiries</h3>
+                    <ul>
+                        <li>sales@our-home.ph</li>
+                        <li>8845-5543 loc. (217-219)</li>
+                    </ul>
+                    <h3>For general inquiries</h3>
+                    <ul>
+                        <li>inquiry@our-home.ph</li>
+                        <li>8845-5544</li>
+                    </ul>
+                    <h3>For career opportunities</h3>
+                    <ul>
+                        <li>hr@our-home.ph</li>
+                        <li>8845-5543 loc. (222-225)</li>
+                    </ul>
+                </div>
+                <div class="col-xxl-7 order-1 order-xxl-2 my-auto">
+                    <img class="w-100" src="images/bcct-map.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact-form">
+    <section id="contact" class="py-5">
+        <h2 class="text-center">Do you have other questions you want answered?</h2>
+        <p class="text-center">Feel free to reach us by sending your inquiries below.</p>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-lg-6 mx-auto">
+                    <form action="#" class="needs-validation border border-dark p-3" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Juan dela Cruz" required>
+                            <div class="invalid-feedback">
+                                Please don't leave this blank so we can properly address you.
+                            </div>
+                            <div class="valid-feedback">
+                                Looking good there now!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <div class="invalid-feedback">
+                                Hey! That's not a valid email address. How can we reply to your inquiries?
+                            </div>
+                            <div class="valid-feedback">
+                                Looking good there now!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"
+                                required></textarea>
+                            <div class="invalid-feedback">
+                                Please don't leave your message blank. We want to know what you have to say.
+                            </div>
+                            <div class="valid-feedback">
+                                Looking good there now!
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-outline-dark">Send!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer id="footer">
-
+    <footer id="footer" class="bg-dark pt-5 pb-3">
+        <div class="container align-items-center">
+            <div class="row">
+                <div class="col-12 col-lg-4 pb-3" id="company-details">
+                    <h2 class="text-light">Our Home</h2>
+                    <p class="text-light">Building your dream home one step at a time.</p>
+                </div>
+                <div class="col-6 col-lg-2 pb-3" id="sitemap">
+                    <p class="text-light">Home</p>
+                    <p class="text-light">Properties</p>
+                    <p class="text-light">About Us</p>
+                    <p class="text-light">Contact Us</p>
+                </div>
+                <div class="col-6 col-lg-3 pb-3" id="sitemap">
+                    <p class="text-light">Company Policy</p>
+                    <p class="text-light">Terms and Conditions</p>
+                    <p class="text-light">Privacy Policy</p>
+                    <p class="text-light">Social Responsibilities</p>
+                </div>
+                <div class="col-12 col-lg-3" id="social-media">
+                    <p class="text-light">Connect with us on our social media pages!</p>
+                    <i class="fa-brands fa-square-facebook text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-square-instagram text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-linkedin text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-square-twitter text-light fa-2xl pe-2"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 
 </html>
