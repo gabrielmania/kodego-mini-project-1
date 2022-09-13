@@ -5,28 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Home - About Us</title>
+    <title>Our Home - Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ed2f2fe40a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav id="navbar">
-
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Our Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="properties.html">Properties</a>
+                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
     </nav>
-    <section id="location">
-
+    <section id="location" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <h2>We are located at</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta corrupti assumenda
+                        error
+                        quis
+                        dolore, laborum ipsa officiis in non quia beatae architecto placeat nostrum libero ullam. Eum,
+                        atque
+                        nam.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100" src="https://picsum.photos/200" alt="">
+                </div>
+            </div>
     </section>
-    <section id="contact-form">
+    <section id="contact" class="py-5">
+        <h2 class="text-center">Do you have other questions you want answered?</h2>
+        <p class="text-center">Feel free to reach us by sending your inquiries below.</p>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-10 mx-auto">
+                    <form id="form" class="topBefore needs-validation" novalidate>
+                        <input id="name" type="text" placeholder="NAME" required>
+                        <input id="email" type="text" placeholder="E-MAIL">
+                        <textarea id="message" type="text" placeholder="MESSAGE" required></textarea>
+                        <input id="submit" type="submit" value="GO!">
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer id="footer">
-
+    <footer id="footer" class="bg-dark pt-5 pb-3">
+        <div class="container align-items-center">
+            <div class="row">
+                <div class="col-12 col-lg-4 pb-3" id="company-details">
+                    <h2 class="text-light">Our Home</h2>
+                    <p class="text-light">Building your dream home one step at a time.</p>
+                </div>
+                <div class="col-6 col-lg-2 pb-3" id="sitemap">
+                    <p class="text-light">Home</p>
+                    <p class="text-light">Properties</p>
+                    <p class="text-light">About Us</p>
+                    <p class="text-light">Contact Us</p>
+                </div>
+                <div class="col-6 col-lg-3 pb-3" id="sitemap">
+                    <p class="text-light">Company Policy</p>
+                    <p class="text-light">Terms and Conditions</p>
+                    <p class="text-light">Privacy Policy</p>
+                    <p class="text-light">Social Responsibilities</p>
+                </div>
+                <div class="col-12 col-lg-3" id="social-media">
+                    <p class="text-light">Connect with us on our social media pages!</p>
+                    <i class="fa-brands fa-square-facebook text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-square-instagram text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-linkedin text-light fa-2xl pe-2"></i>
+                    <i class="fa-brands fa-square-twitter text-light fa-2xl pe-2"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 
 </html>
