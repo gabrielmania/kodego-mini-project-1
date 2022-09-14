@@ -294,3 +294,67 @@ const mindanao = [
         image: "images/mindanao/mindanao12.jpg",
     },
 ];
+
+
+// LUZON HOUSES
+document.getElementById("L1-title").innerHTML = luzon[0].title;
+document.getElementById("L1").innerHTML =  luzon[0].floorArea + "<br>" +
+                                           luzon[0].lotArea + "<br>" +
+                                           luzon[0].location + "<br>" +
+                                           luzon[0].price + "<br>";
+
+document.getElementById("L2-title").innerHTML = luzon[1].title;
+document.getElementById("L2").innerHTML =  luzon[1].floorArea + "<br>" +
+                                           luzon[1].lotArea + "<br>" +
+                                           luzon[1].location + "<br>" +
+                                           luzon[1].price + "<br>";
+
+document.getElementById("L3-title").innerHTML = luzon[3].title;
+document.getElementById("L3").innerHTML =  luzon[3].floorArea + "<br>" +
+                                           luzon[3].lotArea + "<br>" +
+                                           luzon[3].location + "<br>" +
+                                           luzon[3].price + "<br>";                                           
+
+// END
+
+// VISAYAS HOUSES   
+
+document.getElementById("V1-title").innerHTML = visayas[0].title;
+document.getElementById("V1").innerHTML =  visayas[0].floorArea + "<br>" +
+                                           visayas[0].lotArea + "<br>" +
+                                           visayas[0].location + "<br>" +
+                                           visayas[0].price + "<br>";
+
+document.getElementById("V2-title").innerHTML = visayas[1].title;
+document.getElementById("V2").innerHTML =  visayas[1].floorArea + "<br>" +
+                                           visayas[1].lotArea + "<br>" +
+                                           visayas[1].location + "<br>" +
+                                           visayas[1].price + "<br>";
+
+document.getElementById("V3-title").innerHTML = visayas[3].title;
+document.getElementById("V3").innerHTML =  visayas[3].floorArea + "<br>" +
+                                           visayas[3].lotArea + "<br>" +
+                                           visayas[3].location + "<br>" +
+                                           visayas[3].price + "<br>";                                           
+// END
+
+// MINDANAO HOUSES
+
+document.getElementById("M1-title").innerHTML = visayas[0].title;
+document.getElementById("M1").innerHTML =  visayas[0].floorArea + "<br>" +
+                                           visayas[0].lotArea + "<br>" +
+                                           visayas[0].location + "<br>" +
+                                           visayas[0].price + "<br>";
+
+document.getElementById("M2-title").innerHTML = visayas[1].title;
+document.getElementById("M2").innerHTML =  visayas[1].floorArea + "<br>" +
+                                           visayas[1].lotArea + "<br>" +
+                                           visayas[1].location + "<br>" +
+                                           visayas[1].price + "<br>";
+
+document.getElementById("M3-title").innerHTML = mindanao[3].title;
+document.getElementById("M3").innerHTML =  mindanao[3].floorArea + "<br>" +
+                                           mindanao[3].lotArea + "<br>" +
+                                           mindanao[3].location + "<br>" +
+                                           mindanao[3].price + "<br>";
+// END
