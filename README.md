@@ -57,10 +57,6 @@ Search entries or author
 
 Real estate is a booming industry here in the Philippines and providing an e-commerce website for real-estate developers and buyers will help the Filipino people to easily access the information about the a property that they would want to purchase directly from the real estate developers of brokers
 
-**Website title:** Our Home (temporary)
-
-**Catch phrase:** None as of the moment
-
 **Sitemap:**
 
 1. Homepage
@@ -86,6 +82,10 @@ Real estate is a booming industry here in the Philippines and providing an e-com
 ---
 
 ## Website Contents
+
+**Website title:** Our Home (temporary)
+
+**Catch phrase:** Building your home one step at a time (temporary)
 
 ### History
 
