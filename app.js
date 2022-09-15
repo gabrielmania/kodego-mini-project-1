@@ -295,10 +295,10 @@ const mindanao = [
     },
 ];
 
-const loadProperties = () => {
+const loadProperties = (region) => {
     for (let i = 0; i < 3; i++) {
         // genrate a random number
-        const rand = Math.floor(Math.random() * luzon.length);
+        const rand = Math.floor(Math.random() * region.length);
 
         // create html elements
         const colDiv = document.createElement("div");
@@ -323,17 +323,23 @@ const loadProperties = () => {
         price.classList.add("fs-4");
 
         // assign property details to the created elements
-        h3.innerText = luzon[rand].title;
-        price.innerText = luzon[rand].price;
-        location.innerText = `Location: ${luzon[rand].location}`;
-        floorArea.innerText = `Floor Area: ${luzon[rand].floorArea}`;
-        lotArea.innerText = `Lot Area: ${luzon[rand].lotArea}`;
-        image.src = luzon[rand].image;
+        h3.innerText = region[rand].title;
+        price.innerText = region[rand].price;
+        location.innerText = `Location: ${region[rand].location}`;
+        floorArea.innerText = `Floor Area: ${region[rand].floorArea}`;
+        lotArea.innerText = `Lot Area: ${region[rand].lotArea}`;
+        image.src = region[rand].image;
 
         // append the html elements
-        document.querySelector("#properties-cards .row").append(colDiv);
-        colDiv.append(cardDiv);
+        if (region === luzon) {
+            document.querySelector(`#luzon-properties .row`).append(colDiv);
+        } else if (region === visayas) {
+            document.querySelector(`#visayas-properties .row`).append(colDiv);
+        } else if (region === mindanao) {
+            document.querySelector(`#mindanao-properties .row`).append(colDiv);
+        }
 
+        colDiv.append(cardDiv);
         cardDiv.append(image);
         cardDiv.append(cardBody);
         cardBody.append(cardTitle);
@@ -342,3 +348,9 @@ const loadProperties = () => {
         cardText.append(price, location, floorArea, lotArea);
     }
 };
+
+window.addEventListener("load", () => {
+    loadProperties(luzon);
+    loadProperties(visayas);
+    loadProperties(mindanao);
+});
