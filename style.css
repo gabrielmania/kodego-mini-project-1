@@ -70,7 +70,7 @@
     width: 90%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     #about-content .col-xl-7 {
         text-align: center;
         padding-top: 2%;
