@@ -295,66 +295,50 @@ const mindanao = [
     },
 ];
 
+const loadProperties = () => {
+    for (let i = 0; i < 3; i++) {
+        // genrate a random number
+        const rand = Math.floor(Math.random() * luzon.length);
 
-// LUZON HOUSES
-document.getElementById("L1-title").innerHTML = luzon[0].title;
-document.getElementById("L1").innerHTML =  luzon[0].floorArea + "<br>" +
-                                           luzon[0].lotArea + "<br>" +
-                                           luzon[0].location + "<br>" +
-                                           luzon[0].price + "<br>";
+        // create html elements
+        const colDiv = document.createElement("div");
+        const cardDiv = document.createElement("div");
+        const cardBody = document.createElement("div");
+        const cardTitle = document.createElement("div");
+        const cardText = document.createElement("div");
+        const image = document.createElement("img");
+        const h3 = document.createElement("h3");
+        const price = document.createElement("p");
+        const location = document.createElement("p");
+        const floorArea = document.createElement("p");
+        const lotArea = document.createElement("p");
 
-document.getElementById("L2-title").innerHTML = luzon[1].title;
-document.getElementById("L2").innerHTML =  luzon[1].floorArea + "<br>" +
-                                           luzon[1].lotArea + "<br>" +
-                                           luzon[1].location + "<br>" +
-                                           luzon[1].price + "<br>";
+        // add classes to created html elements
+        colDiv.classList.add("col-lg-4", "col-md-6", "col-sm-12");
+        cardDiv.classList.add("card", "mb-5", "shadow-sm", "p-3", "h-100");
+        cardBody.classList.add("card-body");
+        cardTitle.classList.add("card-title");
+        cardText.classList.add("card-text");
+        image.classList.add("w-100");
+        price.classList.add("fs-4");
 
-document.getElementById("L3-title").innerHTML = luzon[3].title;
-document.getElementById("L3").innerHTML =  luzon[3].floorArea + "<br>" +
-                                           luzon[3].lotArea + "<br>" +
-                                           luzon[3].location + "<br>" +
-                                           luzon[3].price + "<br>";                                           
+        // assign property details to the created elements
+        h3.innerText = luzon[rand].title;
+        price.innerText = luzon[rand].price;
+        location.innerText = `Location: ${luzon[rand].location}`;
+        floorArea.innerText = `Floor Area: ${luzon[rand].floorArea}`;
+        lotArea.innerText = `Lot Area: ${luzon[rand].lotArea}`;
+        image.src = luzon[rand].image;
 
-// END
+        // append the html elements
+        document.querySelector("#properties-cards .row").append(colDiv);
+        colDiv.append(cardDiv);
 
-// VISAYAS HOUSES   
-
-document.getElementById("V1-title").innerHTML = visayas[0].title;
-document.getElementById("V1").innerHTML =  visayas[0].floorArea + "<br>" +
-                                           visayas[0].lotArea + "<br>" +
-                                           visayas[0].location + "<br>" +
-                                           visayas[0].price + "<br>";
-
-document.getElementById("V2-title").innerHTML = visayas[1].title;
-document.getElementById("V2").innerHTML =  visayas[1].floorArea + "<br>" +
-                                           visayas[1].lotArea + "<br>" +
-                                           visayas[1].location + "<br>" +
-                                           visayas[1].price + "<br>";
-
-document.getElementById("V3-title").innerHTML = visayas[3].title;
-document.getElementById("V3").innerHTML =  visayas[3].floorArea + "<br>" +
-                                           visayas[3].lotArea + "<br>" +
-                                           visayas[3].location + "<br>" +
-                                           visayas[3].price + "<br>";                                           
-// END
-
-// MINDANAO HOUSES
-
-document.getElementById("M1-title").innerHTML = visayas[0].title;
-document.getElementById("M1").innerHTML =  visayas[0].floorArea + "<br>" +
-                                           visayas[0].lotArea + "<br>" +
-                                           visayas[0].location + "<br>" +
-                                           visayas[0].price + "<br>";
-
-document.getElementById("M2-title").innerHTML = visayas[1].title;
-document.getElementById("M2").innerHTML =  visayas[1].floorArea + "<br>" +
-                                           visayas[1].lotArea + "<br>" +
-                                           visayas[1].location + "<br>" +
-                                           visayas[1].price + "<br>";
-
-document.getElementById("M3-title").innerHTML = mindanao[3].title;
-document.getElementById("M3").innerHTML =  mindanao[3].floorArea + "<br>" +
-                                           mindanao[3].lotArea + "<br>" +
-                                           mindanao[3].location + "<br>" +
-                                           mindanao[3].price + "<br>";
-// END
+        cardDiv.append(image);
+        cardDiv.append(cardBody);
+        cardBody.append(cardTitle);
+        cardBody.append(cardText);
+        cardTitle.append(h3);
+        cardText.append(price, location, floorArea, lotArea);
+    }
+};
