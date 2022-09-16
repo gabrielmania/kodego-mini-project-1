@@ -151,7 +151,14 @@
     margin-bottom: 2%;
 }
 
-/* -- -- */
+#properties-cards .btn-outline-secondary {
+    border: 1px solid black;
+    color: black
+}
+
+#properties-cards .btn-outline-secondary:hover {
+    color: white
+}
 
 /* ------------- Footer --------------- */
 @media (max-width: 992px) {
@@ -166,6 +173,7 @@
     padding: 7% 0;
 }
 
+/* ------------- All Properties Page --------------- */
 #image-div {
     border: 1px solid black;
     border-radius: 0 10% 0 10%;
@@ -173,4 +181,29 @@
 
 #image-div img {
     border-radius: 0 10% 0 10%;
+}
+
+#showAll {
+    background-color: #d5bdaf;
+}
+
+#showAll .card {
+    background-color: #edede9;
+}
+
+#showAll a {
+    text-decoration: none;
+}
+
+#showAll p {
+    margin-bottom: 2%;
+}
+
+#showAll .btn-outline-secondary {
+    border: 1px solid black;
+    color: black
+}
+
+#showAll .btn-outline-secondary:hover {
+    color: white
 }

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="loadRegion(mindanao)">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Our Home</a>
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" id="active-nav" href="properties.html">Properties</a>
+                    <a class="nav-link" href="properties.html">Properties</a>
                     <a class="nav-link" href="about.html">About Us</a>
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </div>
@@ -37,72 +37,16 @@
             </div>
         </div>
     </nav>
-    <section id="properties">
-        <!-- Search Bar -->
-        <section id="search" class="search-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <form>
-                            <div>
-                                <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="SEARCH FOR PROPERTIES">
+    <section id="showAll" class="py-5">
+        <div class="container">
+            <h2>Properties in Mindanao</h2>
+            <div class="row">
 
-                                    <button type="submit" class="btn btn-link"><i
-                                            class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <!-- PROPERTIES CARDS/CONTENT -->
-
-        <!-- LUZON HOUSES -->
-        <div class="container" id="properties-content">
-            <section id="luzon-properties">
-                <h2>LUZON</h2>
-                <div class="container pt-3 pb-5" id="properties-cards">
-                    <div class="row justify-content-center">
-
-                    </div>
-                    <a href="luzon-properties.html">
-                        <button class="btn btn-dark d-block mt-3 mx-auto">Show More Properties in Luzon</button>
-                    </a>
-                </div>
-            </section>
-            <!-- END -->
-
-            <!-- VISAYAS HOUSES -->
-            <section id="visayas-properties">
-                <h2>VISAYAS</h2>
-                <div class="container pt-3 pb-5" id="properties-cards">
-                    <div class="row justify-content-center">
-
-                    </div>
-                    <a href="visayas-properties.html">
-                        <button class="btn btn-dark d-block mt-3 mx-auto">Show More Properties in Visayas</button>
-                    </a>
-                </div>
-            </section>
-            <!-- END -->
-
-            <!-- MINDANAO HOUSES -->
-            <section id="mindanao-properties">
-                <h2>MINDANAO</h2>
-                <div class="container pt-3 pb-5" id="properties-cards">
-                    <div class="row justify-content-center">
-
-                    </div>
-                    <a href="mindanao-properties.html">
-                        <button class="btn btn-dark d-block mt-3 mx-auto">Show More Properties in Mindanao</button>
-                    </a>
-                </div>
-            </section>
-            <!-- END -->
         </div>
+        <a href="properties.html">
+            <button class="btn btn-dark d-block mt-2 mx-auto">Return to Properties Page</button>
+        </a>
     </section>
     <footer id="footer" class="bg-dark pt-5 pb-3">
         <div class="container align-items-center">

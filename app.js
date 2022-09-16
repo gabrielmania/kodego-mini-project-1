@@ -344,7 +344,7 @@ const loadProperties = (region) => {
         const cardTitle = document.createElement("div");
         const cardText = document.createElement("div");
         const image = document.createElement("img");
-        const h3 = document.createElement("h3");
+        const title = document.createElement("h5");
         const price = document.createElement("p");
         const location = document.createElement("p");
         const floorArea = document.createElement("p");
@@ -355,18 +355,19 @@ const loadProperties = (region) => {
         const saveAnchor = document.createElement("a");
 
         // add classes to created html elements
-        colDiv.classList.add("col-lg-4", "col-md-6", "col-sm-12");
-        cardDiv.classList.add("card", "mb-5", "shadow-sm", "p-3", "h-100");
+        colDiv.classList.add("col-lg-4", "col-md-6", "col-sm-12", "mb-3");
+        cardDiv.classList.add("card", "shadow-sm", "p-3", "h-100");
         cardBody.classList.add("card-body");
         cardTitle.classList.add("card-title");
         cardText.classList.add("card-text");
         image.classList.add("w-100");
-        price.classList.add("fs-4");
-        detailBtn.classList.add("btn", "btn-primary", "mb-2", "w-100");
-        saveBtn.classList.add("btn", "btn-info", "w-100");
+        title.classList.add("fw-bold");
+        price.classList.add("fw-bold");
+        detailBtn.classList.add("btn", "btn-outline-dark", "mb-2", "w-100");
+        saveBtn.classList.add("btn", "btn-outline-secondary", "w-100");
 
         // assign property details to the created elements
-        h3.innerText = region[rand].title;
+        title.innerText = region[rand].title;
         price.innerText = region[rand].price;
         location.innerText = `Location: ${region[rand].location}`;
         floorArea.innerText = `Floor Area: ${region[rand].floorArea}`;
@@ -392,7 +393,7 @@ const loadProperties = (region) => {
         cardDiv.append(cardBody);
         cardBody.append(cardTitle);
         cardBody.append(cardText);
-        cardTitle.append(h3);
+        cardTitle.append(title);
         cardText.append(price, location, floorArea, lotArea);
         detailAnchor.append(detailBtn);
         saveAnchor.append(saveBtn);
@@ -417,30 +418,30 @@ const loadRegion = (region) => {
         const detailAnchor = document.createElement("a");
         const saveAnchor = document.createElement("a");
 
-        colDiv.classList.add("col-lg-4", "py-3");
-        cardDiv.classList.add("card", "h-100");
+        colDiv.classList.add("col-lg-6", "col-xl-4", "py-3");
+        cardDiv.classList.add("card", "h-100", "p-3");
         image.classList.add("card-img-top");
         cardBody.classList.add("card-body");
-        title.classList.add("card-title");
-        price.classList.add("card-text");
+        title.classList.add("card-title", "fw-bold");
+        price.classList.add("card-text", "fw-bold");
         location.classList.add("card-text");
         floorArea.classList.add("card-text");
         lotArea.classList.add("card-text");
-        detailBtn.classList.add("btn", "btn-primary", "mb-2", "w-100");
-        saveBtn.classList.add("btn", "btn-info", "w-100");
+        detailBtn.classList.add("btn", "btn-outline-dark", "mb-2", "w-100");
+        saveBtn.classList.add("btn", "btn-outline-secondary", "w-100");
 
         image.src = property.image;
         title.innerText = property.title;
         price.innerText = property.price;
-        location.innerText = property.location;
-        floorArea.innerText = property.floorArea;
-        lotArea.innerText = property.lotArea;
+        location.innerText = `Location: ${property.location}`;
+        floorArea.innerText = `Floor Area: ${property.floorArea}`;
+        lotArea.innerText = `Lot Area: ${property.lotArea}`;
         detailBtn.innerText = "Details";
         saveBtn.innerText = "Save";
         detailAnchor.href = property.href;
         saveAnchor.href = "contact.html";
 
-        document.querySelector("#luzon .row").append(colDiv);
+        document.querySelector("#showAll .row").append(colDiv);
         colDiv.append(cardDiv);
         cardDiv.append(image);
         cardDiv.append(cardBody);
