@@ -331,78 +331,11 @@ const mindanao = [
     },
 ];
 
-// load properties for properties.html
-const loadProperties = (region) => {
-    for (let i = 0; i < 3; i++) {
-        // genrate a random number
-        const rand = Math.floor(Math.random() * region.length);
-
-        // create html elements
-        const colDiv = document.createElement("div");
-        const cardDiv = document.createElement("div");
-        const cardBody = document.createElement("div");
-        const cardTitle = document.createElement("div");
-        const cardText = document.createElement("div");
-        const image = document.createElement("img");
-        const h3 = document.createElement("h3");
-        const price = document.createElement("p");
-        const location = document.createElement("p");
-        const floorArea = document.createElement("p");
-        const lotArea = document.createElement("p");
-        const detailBtn = document.createElement("button");
-        const saveBtn = document.createElement("button");
-        const detailAnchor = document.createElement("a");
-        const saveAnchor = document.createElement("a");
-
-        // add classes to created html elements
-        colDiv.classList.add("col-lg-4", "col-md-6", "col-sm-12");
-        cardDiv.classList.add("card", "mb-5", "shadow-sm", "p-3", "h-100");
-        cardBody.classList.add("card-body");
-        cardTitle.classList.add("card-title");
-        cardText.classList.add("card-text");
-        image.classList.add("w-100");
-        price.classList.add("fs-4");
-        detailBtn.classList.add("btn", "btn-primary", "mb-2", "w-100");
-        saveBtn.classList.add("btn", "btn-info", "w-100");
-
-        // assign property details to the created elements
-        h3.innerText = region[rand].title;
-        price.innerText = region[rand].price;
-        location.innerText = `Location: ${region[rand].location}`;
-        floorArea.innerText = `Floor Area: ${region[rand].floorArea}`;
-        lotArea.innerText = `Lot Area: ${region[rand].lotArea}`;
-        image.src = region[rand].image;
-        detailBtn.innerText = "Details";
-        saveBtn.innerText = "Save";
-        detailAnchor.href = region[rand].href;
-        saveAnchor.href = "contact.html";
-        cardDiv.id = "card";
-
-        // append the html elements
-        if (region === luzon) {
-            document.querySelector(`#luzon-properties .row`).append(colDiv);
-        } else if (region === visayas) {
-            document.querySelector(`#visayas-properties .row`).append(colDiv);
-        } else if (region === mindanao) {
-            document.querySelector(`#mindanao-properties .row`).append(colDiv);
-        }
-
-        colDiv.append(cardDiv);
-        cardDiv.append(image);
-        cardDiv.append(cardBody);
-        cardBody.append(cardTitle);
-        cardBody.append(cardText);
-        cardTitle.append(h3);
-        cardText.append(price, location, floorArea, lotArea);
-        detailAnchor.append(detailBtn);
-        saveAnchor.append(saveBtn);
-        cardDiv.append(detailAnchor);
-        cardDiv.append(saveAnchor);
-    }
+const showProperty = (property) => {
+    document.querySelector("#show-property img").src = `../${property.image}`;
+    document.querySelector("#show-property #title").innerText = property.title;
+    document.querySelector("#show-property #price").innerText = property.price;
+    document.querySelector("#show-property #location").innerText = `Location: ${property.location}`;
+    document.querySelector("#show-property #floor-area").innerText = `Floor Area: ${property.floorArea}`;
+    document.querySelector("#show-property #lot-area").innerText = `Lot Area: ${property.lotArea}`;
 };
-
-window.addEventListener("load", () => {
-    loadProperties(luzon);
-    loadProperties(visayas);
-    loadProperties(mindanao);
-});
