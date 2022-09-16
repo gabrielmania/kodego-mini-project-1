@@ -401,6 +401,61 @@ const loadProperties = (region) => {
     }
 };
 
+const loadRegion = (region) => {
+    for (let property of region) {
+        const colDiv = document.createElement("div");
+        const cardDiv = document.createElement("div");
+        const cardBody = document.createElement("div");
+        const image = document.createElement("img");
+        const title = document.createElement("h5");
+        const price = document.createElement("p");
+        const location = document.createElement("p");
+        const floorArea = document.createElement("p");
+        const lotArea = document.createElement("p");
+        const detailBtn = document.createElement("button");
+        const saveBtn = document.createElement("button");
+        const detailAnchor = document.createElement("a");
+        const saveAnchor = document.createElement("a");
+
+        colDiv.classList.add("col-lg-4", "py-3");
+        cardDiv.classList.add("card", "h-100");
+        image.classList.add("card-img-top");
+        cardBody.classList.add("card-body");
+        title.classList.add("card-title");
+        price.classList.add("card-text");
+        location.classList.add("card-text");
+        floorArea.classList.add("card-text");
+        lotArea.classList.add("card-text");
+        detailBtn.classList.add("btn", "btn-primary", "mb-2", "w-100");
+        saveBtn.classList.add("btn", "btn-info", "w-100");
+
+        image.src = property.image;
+        title.innerText = property.title;
+        price.innerText = property.price;
+        location.innerText = property.location;
+        floorArea.innerText = property.floorArea;
+        lotArea.innerText = property.lotArea;
+        detailBtn.innerText = "Details";
+        saveBtn.innerText = "Save";
+        detailAnchor.href = property.href;
+        saveAnchor.href = "contact.html";
+
+        document.querySelector("#luzon .row").append(colDiv);
+        colDiv.append(cardDiv);
+        cardDiv.append(image);
+        cardDiv.append(cardBody);
+        cardBody.append(title);
+        cardBody.append(price);
+        cardBody.append(location);
+        cardBody.append(floorArea);
+        cardBody.append(lotArea);
+        detailAnchor.append(detailBtn);
+        saveAnchor.append(saveBtn);
+        cardDiv.append(detailAnchor);
+        cardDiv.append(saveAnchor);
+    }
+};
+
 window.addEventListener("load", () => {
     loadProperties(luzon);
     loadProperties(visayas);
