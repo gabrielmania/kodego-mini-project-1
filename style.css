@@ -167,6 +167,18 @@
     }
 }
 
+footer a {
+    text-decoration: none;
+}
+
+#sitemap p, #policies p {
+    font-size: 0.9rem;
+}
+
+#company-details p:last-child {
+    font-size: 0.8rem;
+}
+
 /* ------------- Show Property Page --------------- */
 #show-property {
     background-color: #d5bdaf;
