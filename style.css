@@ -20,27 +20,28 @@
     color: #edede9;
 }
 
-/* ------------- Login Page --------------- */
+/* ------------- Login & Register Page --------------- */
 #login {
-    background-color: #edede9;
+    background-color: #d5bdaf;
 }
 
 #login form {
-    background-color: #d5bdaf;
+    background-color: #edede9;
     padding: 15% 10%;
     margin: 5% 0;
 }
 
 #login input {
-    background-color: #edede9;
+    background-color: #d5bdaf;
+    border: 1px solid black;
 }
 
 #login button {
-    background-color: #d5bdaf;
+    background-color: #edede9;
 }
 
 #login button:hover {
-    background-color: #edede9;
+    background-color: #d5bdaf;
     color: black;
 }
 
