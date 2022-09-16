@@ -111,6 +111,18 @@
 }
 
 /* -------------- Properties -------------- */
+#properties {
+    background-color: #d5bdaf;
+}
+
+#card {
+    background-color: #edede9;
+}
+
+.properties-link {
+    text-decoration: underline;
+    color: blue;
+}
 
 /*-Searchbar-*/
 .search-bar {
@@ -148,4 +160,19 @@
     #footer {
         text-align: center;
     }
+}
+
+/* ------------- Show Property Page --------------- */
+#show-property {
+    background-color: #d5bdaf;
+    padding: 7% 0;
+}
+
+#image-div {
+    border: 1px solid black;
+    border-radius: 0 10% 0 10%;
+}
+
+#image-div img {
+    border-radius: 0 10% 0 10%;
 }
