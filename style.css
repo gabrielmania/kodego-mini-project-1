@@ -22,26 +22,22 @@
 
 /* ------------- Login & Register Page --------------- */
 #login {
-    background-color: #d5bdaf;
+    background-color: #edede9;
 }
 
 #login form {
-    background-color: #edede9;
+    background-color: #d5bdaf;
     padding: 15% 10%;
     margin: 5% 0;
 }
 
 #login input {
-    background-color: #d5bdaf;
+    background-color: #edede9;
     border: 1px solid black;
 }
 
-#login button {
-    background-color: #edede9;
-}
-
 #login button:hover {
-    background-color: #d5bdaf;
+    background-color: #edede9;
     color: black;
 }
 
@@ -94,6 +90,7 @@
 #contact input,
 #contact textarea {
     background-color: #edede9;
+    border: 1px solid black;
 }
 
 #contact button:hover {
