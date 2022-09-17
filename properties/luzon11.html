@@ -12,96 +12,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body onload="showProperty(luzon[10])">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Our Home</a>
+            <a class="navbar-brand" href="../index.html">Our Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" id="active-nav" href="properties.html">Properties</a>
-                    <a class="nav-link" href="about.html">About Us</a>
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="../properties.html">Properties</a>
+                    <a class="nav-link" href="../about.html">About Us</a>
+                    <a class="nav-link" href="../contact.html">Contact Us</a>
                 </div>
                 <div class="navbar-nav ms-auto">
-                    <a href="login.html"><button class="btn btn-outline-light">Login</button></a>
-                    <a href="register.html"><button class="btn btn-light">Register</button></a>
+                    <a href="../login.html"><button class="btn btn-outline-light">Login</button></a>
+                    <a href="../register.html"><button class="btn btn-light">Register</button></a>
                 </div>
             </div>
         </div>
     </nav>
-    <section id="properties">
-        <!-- Search Bar -->
-        <section id="search" class="search-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <form>
-                            <div>
-                                <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="SEARCH FOR PROPERTIES">
-
-                                    <button type="submit" class="btn btn-link"><i
-                                            class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <section id="show-property">
+        <div class="container">
+            <div class="row">
+                <div id="image-div" class="col-lg-6 p-2">
+                    <img class="w-100" src="" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h2 id="title"></h2>
+                    <h3 id="price"></h3>
+                    <p id="location"></p>
+                    <p id="floor-area"></p>
+                    <p id="lot-area"></p>
                 </div>
             </div>
-        </section>
-
-        <!-- PROPERTIES CARDS/CONTENT -->
-
-        <!-- LUZON HOUSES -->
-        <div class="container" id="properties-content">
-            <section id="luzon-properties">
-                <h2>LUZON</h2>
-                <div class="container pt-3 pb-5" id="properties-cards">
-                    <div class="row justify-content-center">
-
-                    </div>
-                    <a href="luzon-properties.html">
-                        <button class="btn btn-dark d-block mt-3 mx-auto">Show More Properties in Luzon</button>
-                    </a>
-                </div>
-            </section>
-            <!-- END -->
-
-            <!-- VISAYAS HOUSES -->
-            <section id="visayas-properties">
-                <h2>VISAYAS</h2>
-                <div class="container pt-3 pb-5" id="properties-cards">
-                    <div class="row justify-content-center">
-
-                    </div>
-                    <a href="visayas-properties.html">
-                        <button class="btn btn-dark d-block mt-3 mx-auto">Show More Properties in Visayas</button>
-                    </a>
-                </div>
-            </section>
-            <!-- END -->
-
-            <!-- MINDANAO HOUSES -->
-            <section id="mindanao-properties">
-                <h2>MINDANAO</h2>
-                <div class="container pt-3 pb-5" id="properties-cards">
-                    <div class="row justify-content-center">
-
-                    </div>
-                    <a href="mindanao-properties.html">
-                        <button class="btn btn-dark d-block mt-3 mx-auto">Show More Properties in Mindanao</button>
-                    </a>
-                </div>
-            </section>
-            <!-- END -->
         </div>
     </section>
     <footer id="footer" class="bg-dark pt-5 pb-3">
@@ -113,30 +62,30 @@
                     <p class="text-light">&copy; Copyright2022 Our Home Philippines All Rights Reserved</p>
                 </div>
                 <div class="col-6 col-lg-2 pb-3" id="sitemap">
-                    <a href="index.html">
+                    <a href="../index.html">
                         <p class="text-light">Home</p>
                     </a>
-                    <a href="properties.html">
+                    <a href="../properties.html">
                         <p class="text-light">Properties</p>
                     </a>
-                    <a href="about.html">
+                    <a href="../about.html">
                         <p class="text-light">About Us</p>
                     </a>
-                    <a href="contact.html">
+                    <a href="../contact.html">
                         <p class="text-light">Contact Us</p>
                     </a>
                 </div>
                 <div class="col-6 col-lg-3 pb-3" id="policies">
-                    <a href="policy.html">
+                    <a href="../policy.html">
                         <p class="text-light">Company Policy</p>
                     </a>
-                    <a href="t&c.html">
+                    <a href="../t&c.html">
                         <p class="text-light">Terms and Conditions</p>
                     </a>
-                    <a href="privacy.html">
+                    <a href="../privacy.html">
                         <p class="text-light">Privacy Policy</p>
                     </a>
-                    <a href="social.html">
+                    <a href="../social.html">
                         <p class="text-light">Social Responsibilities</p>
                     </a>
                 </div>
