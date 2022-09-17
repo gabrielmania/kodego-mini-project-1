@@ -39,16 +39,19 @@
     </nav>
     <section class="vh-100" id="show-property">
         <div class="container py-5">
-            <div class="row">
-                <div id="image-div" class="col-lg-6 p-2">
+            <div class="row p-5">
+                <div id="image-div" class="col-lg-7 p-2">
                     <img class="w-100" src="" alt="">
                 </div>
-                <div class="col-lg-6">
-                    <h2 id="title"></h2>
-                    <h3 id="price"></h3>
-                    <p id="location"></p>
+                <div class="col-lg-5 my-auto">
+                    <h4 class="fw-bold" id="title"></h4>
+                    <p class="fw-bold" id="price"></p>
+                    <p id="loc"></p>
                     <p id="floor-area"></p>
                     <p id="lot-area"></p>
+                    <button id="contactButton" class="btn btn-outline-dark w-50" onclick="contact(luzon[0])">Contact an
+                        Agent</button>
+                    <button id="saveButton" class="btn btn-outline-secondary w-25">Save</button>
                 </div>
             </div>
         </div>

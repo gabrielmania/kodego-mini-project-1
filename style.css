@@ -183,6 +183,24 @@ footer a {
     background-color: #d5bdaf;
 }
 
+#show-property p {
+    margin-bottom: 2%;
+}
+
+#show-property .btn-outline-secondary {
+    border: 1px solid black;
+    color: black;
+}
+
+#show-property .btn-outline-secondary:hover {
+    color: white;
+}
+
+#show-property .row {
+    background-color: #edede9;
+    border-radius: 5%;
+}
+
 /* ------------- All Properties Page --------------- */
 #image-div {
     border: 1px solid black;
