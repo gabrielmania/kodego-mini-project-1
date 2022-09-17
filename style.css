@@ -40,6 +40,62 @@
     color: black;
 }
 
+/* ------------- index --------------- */
+
+#about-heading {
+    font-size: large;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #edede9;
+}
+
+
+#property1 img,
+#property2 img,
+#property3 img,
+#property4 img,
+#property5 img,
+#property6 img,
+#property7 img,
+#property8 img {
+    width: 255px;
+    height: 255px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    margin-left: 45px;
+    margin: top 100px;
+    position: relative;
+
+}
+
+.paragraph {}
+
+
+.property-info {
+    width: 255px;
+    height: 255px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin: top 100px;
+    background-color: solid #f2ece7;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.property-details {
+    width: 255px;
+    height: 255px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+
+
+
+}
+
+
 /* ------------- About Us --------------- */
 #about-heading {
     background-color: #d5bdaf;
@@ -164,6 +220,7 @@
     #footer {
         text-align: center;
     }
+<<<<<<< HEAD
 }
 
 footer a {
@@ -234,4 +291,6 @@ footer a {
 
 #showAll .btn-outline-secondary:hover {
     color: white
+=======
+>>>>>>> f216ea5fbdc398c4a6a5bfb8828995cbc91698ba
 }

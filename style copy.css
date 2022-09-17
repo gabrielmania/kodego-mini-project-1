@@ -1,0 +1,153 @@
+/* ------------- Navbar --------------- */
+.navbar-nav .btn-outline-light {
+    margin-right: 0.5rem;
+}
+
+.navbar-nav .btn-light:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav .btn {
+        margin: 0.25rem 0;
+    }
+}
+
+#active-nav {
+    border-bottom: 1px solid #e3d5ca;
+    color: #edede9;
+}
+
+/* ------------- Login Page --------------- */
+#login {
+    background-color: #edede9;
+}
+
+#login form {
+    background-color: #d5bdaf;
+    padding: 15% 10%;
+    margin: 5% 0;
+}
+
+#login input {
+    background-color: #edede9;
+}
+
+#login button {
+    background-color: #d5bdaf;
+}
+
+#login button:hover {
+    background-color: #edede9;
+    color: black;
+}
+/* ------------- index --------------- */
+#property1 img,#property2 img, #property3 img, #property4 img, #property5 img, #property6 img, #property7 img, #property8 img{
+    width: 255px;
+    height: 255px;
+    border-radius: 20px;
+}
+
+.featured-properties{
+    width: 255px;
+    height: 255px;
+    margin-right: 60px;
+    margin-left: 45px;
+    margin: top 100px;
+    float:left;
+    position: relative;
+    background-color: solid #E3D5CA;
+}
+
+/* ------------- About Us --------------- */
+#about-heading {
+    background-color: #d5bdaf;
+}
+
+#about-content {
+    width: 65%;
+}
+
+#about-content img {
+    width: 100%;
+    border-radius: 0 10% 0 10%;
+}
+
+#about-content .border {
+    border-radius: 0 10% 0 10%;
+}
+
+#industry-partners {
+    background-color: #edede9;
+}
+
+#industry-partners img {
+    width: 90%;
+}
+
+@media (max-width: 1400px) {
+    #about-content .col-xl-7 {
+        text-align: center;
+        padding-top: 2%;
+    }
+}
+
+/* ------------- Contact Us --------------- */
+#location {
+    background-color: #d5bdaf;
+}
+
+#contact {
+    background-color: #edede9;
+}
+
+#contact form {
+    background-color: #d5bdaf;
+}
+
+#contact input,
+#contact textarea {
+    background-color: #edede9;
+}
+
+#contact button:hover {
+    background-color: #edede9;
+    color: black;
+}
+
+@media (max-width: 1400px) {
+    #location #contact-details {
+        text-align: center;
+    }
+
+    #location ul {
+        list-style: none;
+    }
+}
+
+/* -- Properties -- */
+
+/*-Searchbar-*/
+.search-bar {
+    padding: 2rem;
+}
+
+.search-bar button {
+    font-size: larger;
+}
+
+.search-bar input:focus {
+    border-color: #d5bdaf;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(213, 189, 175, 0.6);
+}
+
+/* -- -- */
+
+/* ------------- Footer --------------- */
+@media (max-width: 992px) {
+    #footer {
+        text-align: center;
+    }
+}
