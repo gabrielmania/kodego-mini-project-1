@@ -341,5 +341,11 @@ const showProperty = (property) => {
 };
 
 const contact = (property) => {
-    alert(`Your inquiry for the property with the following detail`)
-}
+    alert(
+        `Thank you for your inquiry for ${property.title} property, located at ${property.location}, with a price of ${property.price}! We will get back to you within 24-48hrs.`
+    );
+};
+
+const save = (property) => {
+    alert(`The property ${property.title} located at ${property.location} is now saved in your profile.`);
+};
