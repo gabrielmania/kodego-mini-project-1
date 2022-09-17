@@ -43,6 +43,23 @@
     background-color: #edede9;
     color: black;
 }
+/* ------------- index --------------- */
+#property1 img,#property2 img, #property3 img, #property4 img, #property5 img, #property6 img, #property7 img, #property8 img{
+    width: 255px;
+    height: 255px;
+    border-radius: 20px;
+}
+
+.featured-properties{
+    width: 255px;
+    height: 255px;
+    margin-right: 60px;
+    margin-left: 45px;
+    margin: top 100px;
+    float:left;
+    position: relative;
+    background-color: solid #E3D5CA;
+}
 
 /* ------------- About Us --------------- */
 #about-heading {
