@@ -335,7 +335,17 @@ const showProperty = (property) => {
     document.querySelector("#show-property img").src = `../${property.image}`;
     document.querySelector("#show-property #title").innerText = property.title;
     document.querySelector("#show-property #price").innerText = property.price;
-    document.querySelector("#show-property #location").innerText = `Location: ${property.location}`;
+    document.querySelector("#show-property #loc").innerText = `Location: ${property.location}`;
     document.querySelector("#show-property #floor-area").innerText = `Floor Area: ${property.floorArea}`;
     document.querySelector("#show-property #lot-area").innerText = `Lot Area: ${property.lotArea}`;
+};
+
+const contact = (property) => {
+    alert(
+        `Thank you for your inquiry for ${property.title} property, located at ${property.location}, with a price of ${property.price}! We will get back to you within 24-48hrs.`
+    );
+};
+
+const save = (property) => {
+    alert(`The property ${property.title} located at ${property.location} is now saved in your profile.`);
 };

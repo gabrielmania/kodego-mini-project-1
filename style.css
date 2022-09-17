@@ -28,7 +28,6 @@
 #login form {
     background-color: #d5bdaf;
     padding: 15% 10%;
-    margin: 5% 0;
 }
 
 #login input {
@@ -182,7 +181,24 @@ footer a {
 /* ------------- Show Property Page --------------- */
 #show-property {
     background-color: #d5bdaf;
-    padding: 7% 0;
+}
+
+#show-property p {
+    margin-bottom: 2%;
+}
+
+#show-property .btn-outline-secondary {
+    border: 1px solid black;
+    color: black;
+}
+
+#show-property .btn-outline-secondary:hover {
+    color: white;
+}
+
+#show-property .row {
+    background-color: #edede9;
+    border-radius: 5%;
 }
 
 /* ------------- All Properties Page --------------- */

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body onload="showProperty(luzon[2])">
+<body class="d-flex flex-column vh-100" onload="showProperty(luzon[2])">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Our Home</a>
@@ -37,23 +37,30 @@
             </div>
         </div>
     </nav>
-    <section id="show-property">
-        <div class="container">
-            <div class="row">
-                <div id="image-div" class="col-lg-6 p-2">
+    <section class="vh-100" id="show-property">
+        <div class="container pt-5">
+            <h4 class="text-center">Here at Our Home, you can be sure of our excellent customer service!</h4>
+        </div>
+        <div class="container py-5">
+            <div class="row p-5">
+                <div id="image-div" class="col-lg-7 p-2">
                     <img class="w-100" src="" alt="">
                 </div>
-                <div class="col-lg-6">
-                    <h2 id="title"></h2>
-                    <h3 id="price"></h3>
-                    <p id="location"></p>
+                <div class="col-lg-5 my-auto">
+                    <h4 class="fw-bold" id="title"></h4>
+                    <p class="fw-bold" id="price"></p>
+                    <p id="loc"></p>
                     <p id="floor-area"></p>
                     <p id="lot-area"></p>
+                    <button id="contactButton" class="btn btn-outline-dark w-50" onclick="contact(luzon[2])">Contact an
+                        Agent</button>
+                    <button id="saveButton" class="btn btn-outline-secondary w-25"
+                        onclick="save(luzon[2])">Save</button>
                 </div>
             </div>
         </div>
     </section>
-    <footer id="footer" class="bg-dark pt-5 pb-3">
+    <footer id="footer" class="bg-dark pt-5 pb-3 mt-auto">
         <div class="container align-items-center">
             <div class="row">
                 <div class="col-12 col-lg-4 pb-3" id="company-details">
