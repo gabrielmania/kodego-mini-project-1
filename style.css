@@ -44,6 +44,32 @@ nav img {
     color: black;
 }
 
+/* ------------- HomePage --------------- */
+
+#heading {
+    background-color: #edede9;
+}
+
+#carousel {
+    background-color: #edede9;
+}
+
+#featuredProperties {
+    background-color: #d5bdaf;
+}
+
+#featuredProperties .card {
+    background-color: #edede9;
+}
+
+#featuredProperties .btn-outline-secondary {
+    border: 1px solid black;
+    color: black;
+}
+
+#featuredProperties .btn-outline-secondary:hover {
+    color: white;
+}
 /* ------------- About Us --------------- */
 #about-heading {
     background-color: #d5bdaf;
