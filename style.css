@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
 /* ------------- Navbar --------------- */
 .navbar-nav .btn-outline-light {
     margin-right: 0.5rem;
@@ -20,13 +28,17 @@
     color: #edede9;
 }
 
+nav img {
+    width: 100px;
+}
+
 /* ------------- Login & Register Page --------------- */
 #login {
-    background-color: #edede9;
+    background-color: #d5bdaf;
 }
 
 #login form {
-    background-color: #d5bdaf;
+    background-color: #edede9;
     padding: 15% 10%;
 }
 
@@ -36,10 +48,36 @@
 }
 
 #login button:hover {
-    background-color: #edede9;
+    background-color: #d5bdaf;
     color: black;
 }
 
+/* ------------- HomePage --------------- */
+
+#heading {
+    background-color: #edede9;
+}
+
+#carousel {
+    background-color: #edede9;
+}
+
+#featuredProperties {
+    background-color: #d5bdaf;
+}
+
+#featuredProperties .card {
+    background-color: #edede9;
+}
+
+#featuredProperties .btn-outline-secondary {
+    border: 1px solid black;
+    color: black;
+}
+
+#featuredProperties .btn-outline-secondary:hover {
+    color: white;
+}
 /* ------------- About Us --------------- */
 #about-heading {
     background-color: #d5bdaf;
@@ -144,7 +182,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
-} 
+}
 
 .card-text p {
     margin-bottom: 2%;
@@ -152,11 +190,11 @@
 
 #properties-cards .btn-outline-secondary {
     border: 1px solid black;
-    color: black
+    color: black;
 }
 
 #properties-cards .btn-outline-secondary:hover {
-    color: white
+    color: white;
 }
 
 /* ------------- Footer --------------- */
@@ -170,7 +208,8 @@ footer a {
     text-decoration: none;
 }
 
-#sitemap p, #policies p {
+#sitemap p,
+#policies p {
     font-size: 0.9rem;
 }
 
@@ -229,9 +268,9 @@ footer a {
 
 #showAll .btn-outline-secondary {
     border: 1px solid black;
-    color: black
+    color: black;
 }
 
 #showAll .btn-outline-secondary:hover {
-    color: white
+    color: white;
 }

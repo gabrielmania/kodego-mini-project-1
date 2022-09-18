@@ -352,7 +352,6 @@ const loadProperties = (region) => {
         const detailBtn = document.createElement("button");
         const saveBtn = document.createElement("button");
         const detailAnchor = document.createElement("a");
-        const saveAnchor = document.createElement("a");
 
         // add classes to created html elements
         colDiv.classList.add("col-lg-4", "col-md-6", "col-sm-12", "mb-3");
@@ -376,7 +375,6 @@ const loadProperties = (region) => {
         detailBtn.innerText = "Details";
         saveBtn.innerText = "Save";
         detailAnchor.href = region[rand].href;
-        saveAnchor.href = "contact.html";
         cardDiv.id = "card";
 
         // append the html elements
@@ -389,16 +387,17 @@ const loadProperties = (region) => {
         }
 
         colDiv.append(cardDiv);
-        cardDiv.append(image);
-        cardDiv.append(cardBody);
-        cardBody.append(cardTitle);
-        cardBody.append(cardText);
+        cardDiv.append(image, cardBody, detailAnchor, saveBtn);
+        cardBody.append(cardTitle, cardText);
         cardTitle.append(title);
         cardText.append(price, location, floorArea, lotArea);
         detailAnchor.append(detailBtn);
-        saveAnchor.append(saveBtn);
-        cardDiv.append(detailAnchor);
-        cardDiv.append(saveAnchor);
+
+        saveBtn.onclick = function () {
+            alert(
+                `The property ${region[rand].title} located at ${region[rand].location} is now saved in your profile.`
+            );
+        };
     }
 };
 
@@ -416,7 +415,6 @@ const loadRegion = (region) => {
         const detailBtn = document.createElement("button");
         const saveBtn = document.createElement("button");
         const detailAnchor = document.createElement("a");
-        const saveAnchor = document.createElement("a");
 
         colDiv.classList.add("col-lg-6", "col-xl-4", "py-3");
         cardDiv.classList.add("card", "h-100", "p-3");
@@ -439,26 +437,69 @@ const loadRegion = (region) => {
         detailBtn.innerText = "Details";
         saveBtn.innerText = "Save";
         detailAnchor.href = property.href;
-        saveAnchor.href = "contact.html";
 
         document.querySelector("#showAll .row").append(colDiv);
         colDiv.append(cardDiv);
-        cardDiv.append(image);
-        cardDiv.append(cardBody);
-        cardBody.append(title);
-        cardBody.append(price);
-        cardBody.append(location);
-        cardBody.append(floorArea);
-        cardBody.append(lotArea);
+        cardDiv.append(image, cardBody, detailAnchor, saveBtn);
+        cardBody.append(title, price, location, floorArea, lotArea);
         detailAnchor.append(detailBtn);
-        saveAnchor.append(saveBtn);
-        cardDiv.append(detailAnchor);
-        cardDiv.append(saveAnchor);
+
+        saveBtn.onclick = function () {
+            alert(`The property ${property.title} located at ${property.location} is now saved in your profile.`);
+        };
     }
 };
 
-window.addEventListener("load", () => {
-    loadProperties(luzon);
-    loadProperties(visayas);
-    loadProperties(mindanao);
-});
+const loadFeaturedProperties = (luzon, visayas, mindanao) => {
+    for (let i = 0; i < 6; i++) {
+        const allLocations = [...luzon, ...visayas, ...mindanao];
+        const rand = Math.floor(Math.random() * allLocations.length);
+
+        const colDiv = document.createElement("div");
+        const cardDiv = document.createElement("div");
+        const image = document.createElement("img");
+        const cardBody = document.createElement("div");
+        const title = document.createElement("h5");
+        const price = document.createElement("p");
+        const location = document.createElement("p");
+        const floorArea = document.createElement("p");
+        const lotArea = document.createElement("p");
+        const detailAnch = document.createElement("a");
+        const detailBtn = document.createElement("button");
+        const saveBtn = document.createElement("button");
+
+        colDiv.classList.add("col-xs-12", "col-lg-6", "col-xl-4", "my-3");
+        cardDiv.classList.add("card", "p-3", "h-100");
+        image.classList.add("card-img-top");
+        cardBody.classList.add("card-body");
+        title.classList.add("card-title", "fw-bold");
+        price.classList.add("card-text", "fw-bold");
+        location.classList.add("card-text");
+        floorArea.classList.add("card-text");
+        lotArea.classList.add("card-text");
+        detailBtn.classList.add("btn", "btn-outline-dark", "w-100", "mb-2");
+        saveBtn.classList.add("btn", "btn-outline-secondary", "w-100");
+
+        image.src = allLocations[rand].image;
+        title.innerText = allLocations[rand].title;
+        price.innerText = allLocations[rand].price;
+        location.innerText = `Location: ${allLocations[rand].location}`;
+        floorArea.innerText = `Floor Area: ${allLocations[rand].floorArea}`;
+        lotArea.innerText = `Lot Area: ${allLocations[rand].lotArea}`;
+        detailBtn.innerText = "Details";
+        saveBtn.innerText = "Save";
+        detailAnch.href = allLocations[rand].href;
+
+        document.querySelector("#featuredProperties .row").append(colDiv);
+        colDiv.append(cardDiv);
+        cardDiv.append(image, cardBody, detailAnch, saveBtn);
+        cardBody.append(title, price, location, floorArea, lotArea);
+        detailAnch.append(detailBtn);
+
+        saveBtn.onclick = function () {
+            alert(
+                `The property ${allLocations[rand].title} located at ${allLocations[rand].location} is now saved in your profile.`
+            );
+        };
+    }
+};

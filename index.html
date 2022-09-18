@@ -9,12 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed2f2fe40a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body onload="loadFeaturedProperties(luzon, visayas, mindanao)">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Our Home</a>
+        <div class="container-fluid w-75">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,11 +41,72 @@
         </div>
     </nav>
     <section id="heading">
-
+        <div class="container py-5">
+            <div class="row">
+                <img src="images/logo.png" class="col-lg-6" alt="">
+                <div class="col-lg-6 my-auto">
+                    <h2> Building your dream home one step at a time...</h2>
+                    <p>We redefine the concept of real-estate industry... convenience and simplicity are synonymous to
+                        quality.We dedicate ourselves to providing topnotch customer service and experience. We bring
+                        convenience to our existing and future clients.</p>
+                    <button class="btn btn-dark btn-lg me-2"><i
+                            class="fa-brands fa-apple fa-xl pe-1"></i>Download</button>
+                    <button class="btn btn-outline-dark btn-lg"><i
+                            class="fa-brands fa-google-play fa-xl pe-1"></i>Download</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="featured-properties">
 
+    <section id="carousel">
+        <div id="testimonials" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel/home1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/home2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/home3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/home4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/home5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/home6.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container py-5 w-50">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for properties" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+        </div>
     </section>
+
+    <section id="featuredProperties" class="py-5">
+        <h2 class="text-center">Featured Properties</h2>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
+
     <footer id="footer" class="bg-dark pt-5 pb-3">
         <div class="container align-items-center">
             <div class="row">
@@ -91,6 +159,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

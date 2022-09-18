@@ -13,12 +13,18 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body onload="loadProperties(luzon), loadProperties(visayas), loadProperties(mindanao)">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Our Home</a>
+        <div class="container-fluid w-75">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,32 +45,20 @@
     </nav>
     <section id="properties">
         <!-- Search Bar -->
-        <section id="search" class="search-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <form>
-                            <div>
-                                <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="SEARCH FOR PROPERTIES">
-
-                                    <button type="submit" class="btn btn-link"><i
-                                            class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="container py-5 w-50">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for properties" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+        </div>
 
         <!-- PROPERTIES CARDS/CONTENT -->
 
         <!-- LUZON HOUSES -->
         <div class="container" id="properties-content">
             <section id="luzon-properties">
-                <h2>LUZON</h2>
                 <div class="container pt-3 pb-5" id="properties-cards">
+                    <h2>Luzon</h2>
                     <div class="row justify-content-center">
 
                     </div>
@@ -77,8 +71,8 @@
 
             <!-- VISAYAS HOUSES -->
             <section id="visayas-properties">
-                <h2>VISAYAS</h2>
                 <div class="container pt-3 pb-5" id="properties-cards">
+                    <h2>Visayas</h2>
                     <div class="row justify-content-center">
 
                     </div>
@@ -91,8 +85,8 @@
 
             <!-- MINDANAO HOUSES -->
             <section id="mindanao-properties">
-                <h2>MINDANAO</h2>
                 <div class="container pt-3 pb-5" id="properties-cards">
+                    <h2>Mindanao</h2>
                     <div class="row justify-content-center">
 
                     </div>
