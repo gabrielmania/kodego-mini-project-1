@@ -499,7 +499,7 @@ const loadFeaturedProperties = (luzon, visayas, mindanao) => {
         lotArea.innerText = `Lot Area: ${allLocations[rand].lotArea}`;
         detailBtn.innerText = "Details";
         saveBtn.innerText = "Save";
-        detailAnch.href = allLocations[rand].href;
+        detailAnch.href = allLocations[rand].href
 
         document.querySelector("#featuredProperties .row").append(colDiv);
         colDiv.append(cardDiv);
@@ -514,9 +514,7 @@ const loadFeaturedProperties = (luzon, visayas, mindanao) => {
         detailAnch.append(detailBtn);
 
         saveBtn.onclick = function () {
-            alert(
-                `The property ${allLocations[rand].title} located at ${allLocations[rand].location} is now saved in your profile.`
-            );
+            alert(`The property ${allLocations[rand].title} located at ${allLocations[rand].location} is now saved in your profile.`);
         };
     }
 };

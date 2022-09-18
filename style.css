@@ -26,11 +26,11 @@ nav img {
 
 /* ------------- Login & Register Page --------------- */
 #login {
-    background-color: #edede9;
+    background-color: #d5bdaf;
 }
 
 #login form {
-    background-color: #d5bdaf;
+    background-color: #edede9;
     padding: 15% 10%;
 }
 
@@ -40,7 +40,7 @@ nav img {
 }
 
 #login button:hover {
-    background-color: #edede9;
+    background-color: #d5bdaf;
     color: black;
 }
 
