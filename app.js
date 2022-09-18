@@ -352,7 +352,6 @@ const loadProperties = (region) => {
         const detailBtn = document.createElement("button");
         const saveBtn = document.createElement("button");
         const detailAnchor = document.createElement("a");
-        const saveAnchor = document.createElement("a");
 
         // add classes to created html elements
         colDiv.classList.add("col-lg-4", "col-md-6", "col-sm-12", "mb-3");
@@ -376,7 +375,6 @@ const loadProperties = (region) => {
         detailBtn.innerText = "Details";
         saveBtn.innerText = "Save";
         detailAnchor.href = region[rand].href;
-        saveAnchor.href = "contact.html";
         cardDiv.id = "card";
 
         // append the html elements
@@ -396,9 +394,14 @@ const loadProperties = (region) => {
         cardTitle.append(title);
         cardText.append(price, location, floorArea, lotArea);
         detailAnchor.append(detailBtn);
-        saveAnchor.append(saveBtn);
         cardDiv.append(detailAnchor);
-        cardDiv.append(saveAnchor);
+        cardDiv.append(saveBtn);
+
+        saveBtn.onclick = function () {
+            alert(
+                `The property ${region[rand].title} located at ${region[rand].location} is now saved in your profile.`
+            );
+        };
     }
 };
 
@@ -416,7 +419,6 @@ const loadRegion = (region) => {
         const detailBtn = document.createElement("button");
         const saveBtn = document.createElement("button");
         const detailAnchor = document.createElement("a");
-        const saveAnchor = document.createElement("a");
 
         colDiv.classList.add("col-lg-6", "col-xl-4", "py-3");
         cardDiv.classList.add("card", "h-100", "p-3");
@@ -439,7 +441,6 @@ const loadRegion = (region) => {
         detailBtn.innerText = "Details";
         saveBtn.innerText = "Save";
         detailAnchor.href = property.href;
-        saveAnchor.href = "contact.html";
 
         document.querySelector("#showAll .row").append(colDiv);
         colDiv.append(cardDiv);
@@ -451,14 +452,11 @@ const loadRegion = (region) => {
         cardBody.append(floorArea);
         cardBody.append(lotArea);
         detailAnchor.append(detailBtn);
-        saveAnchor.append(saveBtn);
         cardDiv.append(detailAnchor);
-        cardDiv.append(saveAnchor);
+        cardDiv.append(saveBtn);
+
+        saveBtn.onclick = function () {
+            alert(`The property ${property.title} located at ${property.location} is now saved in your profile.`);
+        };
     }
 };
-
-window.addEventListener("load", () => {
-    loadProperties(luzon);
-    loadProperties(visayas);
-    loadProperties(mindanao);
-});
