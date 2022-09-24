@@ -1,4 +1,4 @@
-# KodeGo 1st Capstone Project
+# KodeGo 1st Mini Project
 
 You will be creating your own ecommerce website that allows you to sell products or services online.
 
